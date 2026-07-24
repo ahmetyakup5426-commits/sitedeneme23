@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özel Diş & İmplant Kliniği</title>
+    <style>
+        /* Genel Stiller */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        /* Header & Navigasyon */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0077b6;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #495057;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #0077b6;
+        }
+
+        /* Hero / Giriş Bölümü */
+        .hero {
+            background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            opacity: 0.9;
+        }
+        .btn-randevu {
+            background-color: #90e0ef;
+            color: #03045e;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .btn-randevu:hover {
+            background-color: #ffffff;
+        }
+
+        /* Hizmetler Bölümü */
+        .services {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #03045e;
+            margin-bottom: 2.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid #0077b6;
+        }
+        .card h3 {
+            color: #0077b6;
+            margin-bottom: 1rem;
+        }
+
+        /* İletişim & Konum */
+        .contact {
+            background-color: #e9ecef;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #03045e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Menü -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">🦷 DENT-EKİM</div>
+            <nav class="nav-links">
+                <a href="#anasayfa">Ana Sayfa</a>
+                <a href="#hizmetler">Hizmetler</a>
+                <a href="#iletisim">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Ana Görsel / Karşılama -->
+    <section class="hero" id="anasayfa">
+        <h1>Sağlıklı Gülüşler, Güvenli Yarınlar</h1>
+        <p>Uzman kadromuz ile diş ekimi, implant ve estetik diş hekimliğinde modern çözümler sunuyoruz.</p>
+        <a href="#iletisim" class="btn-randevu">Hemen Randevu Al</a>
+    </section>
+
+    <!-- Hizmetler -->
+    <section class="services" id="hizmetler">
+        <h2 class="section-title">Hizmetlerimiz</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Diş Ekimi & İmplant</h3>
+                <p>Eksik dişlerinizi son teknoloji dikişsiz ve acısız implant yöntemleriyle yeniden kazandırıyoruz.</p>
+            </div>
+            <div class="card">
+                <h3>Gülüş Tasarımı</h3>
+                <p>Zirkonyum ve lamine kaplamalar ile estetik ve doğal görünen bir gülüşe sahip olun.</p>
+            </div>
+            <div class="card">
+                <h3>Kanal Tedavisi & Dolgu</h3>
+                <p>Kendi dişinizi koruyarak uzun ömürlü ve ağrısız tedavi yöntemleri uyguluyoruz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section class="contact" id="iletisim">
+        <h2 class="section-title">Bizimle İletişime Geçin</h2>
+        <p>📍 <strong>Adres:</strong> Atatürk Caddesi No:123, İstanbul</p>
+        <p>📞 <strong>Telefon:</strong> (0212) 555 01 02</p>
+        <p>✉️ <strong>E-Posta:</strong> randevu@dint-ekim.com</p>
+    </section>
+
+    <!-- Alt Bilgi -->
+    <footer>
+        <p>&copy; 2026 Özel Diş & İmplant Kliniği. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
